@@ -13,13 +13,10 @@
         <button onclick="verificarIdade()">Verificar</button>
         <p id="resultado"></p>
     </div>
-
     <script>
         function verificarIdade(){
             const idade = parseInt(document.getElementById('idadeInput').value);
-
             let mensagem = "";
-
             if(isNaN(idade) || idade < 0){
             mensagem = "por favor, insira uma idade valida";
             }else if(idade < 18){
@@ -29,7 +26,6 @@
             }else{
             mensagem = "você e idoso";
             }
-
             document.getElementById('resultado').innerText = mensagem;
         }
     </script>
